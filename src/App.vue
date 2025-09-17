@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Layout from "@/components/Layout.vue";
 import Bar from "@/components/Bar.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
@@ -10,7 +11,8 @@ import Bar from "@/components/Bar.vue";
        text="white"
        flex="~"
        items="center"
-       justify="center">
+       justify="center"
+       font-mono>
     <Layout>
       <template #header>
         <Bar/>
@@ -23,9 +25,7 @@ import Bar from "@/components/Bar.vue";
       </template>
 
       <template #footer>
-        <div>
-          Div 3
-        </div>
+        <Footer/>
       </template>
     </Layout>
   </div>

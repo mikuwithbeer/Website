@@ -20,7 +20,9 @@ const links = [
 </script>
 
 <template>
-  <div flex="~ col" items="center" justify="center" h="full" w="full" gap="10">
+  <div flex="~ col" items="center" justify="center"
+       h="full" w="full"
+       gap="10">
     <div
         v-for="link in links"
         :key="link.name"
