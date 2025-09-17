@@ -16,6 +16,7 @@
     "@types/node": "^24.5.1",
     "@unocss/preset-attributify": "^66.5.1",
     "@unocss/preset-icons": "^66.5.1",
+    "@unocss/preset-web-fonts": "^66.5.1",
     "@unocss/preset-wind4": "^66.5.1",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.7.0",
