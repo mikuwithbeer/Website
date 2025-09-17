@@ -4,11 +4,11 @@ import vue from '@vitejs/plugin-vue'
 
 // UnoCSS
 import Unocss from 'unocss/vite'
-import {presetAttributify, presetWind4} from 'unocss'
+import {presetAttributify, presetIcons, presetWind4} from 'unocss'
 
 export default defineConfig({
     plugins: [vue(), Unocss({
-        presets: [presetAttributify(), presetWind4()], // Presets
+        presets: [presetAttributify(), presetWind4(), presetIcons()], // Presets
     })],
     resolve: {
         alias: {
