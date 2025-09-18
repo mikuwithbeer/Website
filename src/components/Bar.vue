@@ -1,35 +1,41 @@
-<script setup lang="ts">
-const links = [
+<script lang="ts" setup>
+import type {Page} from "@/types";
+import {usePageStore} from "@/stores/page.ts";
+
+const links: Array<Page> = [
   {
-    name: "Home",
+    name: "home",
     icon: "i-mynaui:home"
   },
   {
-    name: "Education",
+    name: "education",
     icon: "i-mynaui:academic-hat"
   },
   {
-    name: "Code",
+    name: "code",
     icon: "i-mynaui:terminal"
   },
   {
-    name: "Social",
+    name: "social",
     icon: "i-mynaui:external-link"
   }
 ]
+
+const store = usePageStore()
 </script>
 
 <template>
-  <div flex="~ col" items="center" justify="center"
-       h="full" w="full"
-       gap="10">
+  <div flex="~ col" gap="10" h="full"
+       items="center" justify="center"
+       w="full">
     <div
         v-for="link in links"
         :key="link.name"
         :class="[link.icon]"
+        hover="text-white cursor-pointer"
         text="3xl dark-100"
-        transition="all ease-in-out duration-300"
-        hover="text-primary text-white cursor-pointer"
+        transition="all ease-in-out duration-200"
+        @click="() => store.page = link.name"
     />
   </div>
 </template>
