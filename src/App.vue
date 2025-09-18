@@ -36,7 +36,9 @@ const pages: PageMap = {
         <Bar/>
       </template>
       <template #main>
-        <component :is="pages[store.page]"/>
+        <Transition mode="out-in">
+          <component :is="pages[store.page]"/>
+        </Transition>
       </template>
       <template #footer>
         <Footer/>
@@ -44,3 +46,15 @@ const pages: PageMap = {
     </Layout>
   </div>
 </template>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 250ms ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
