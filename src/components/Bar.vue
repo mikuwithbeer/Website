@@ -22,6 +22,12 @@ const links: Array<Page> = [
 ]
 
 const store = usePageStore()
+const audio = new Audio("/click.mp3")
+
+const changePage = (page: Page): void => {
+  store.page = page.name
+  audio.play()
+}
 </script>
 
 <template>
@@ -35,7 +41,7 @@ const store = usePageStore()
         hover="text-white cursor-pointer"
         text="3xl dark-100"
         transition="all ease-in-out duration-200"
-        @click="() => store.page = link.name"
+        @click="() => changePage(link)"
     />
   </div>
 </template>
