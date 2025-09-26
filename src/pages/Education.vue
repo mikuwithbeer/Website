@@ -4,12 +4,10 @@ import Link from "@/components/Link.vue";
 
 <template>
   <div>
-    <Link content="bogazici university" keep link="https://bogazici.edu.tr/"/>
+    <Link content="bogazici university" keep link="https://bogazici.edu.tr/" />
     <p>department of business adm.</p>
     <p>istanbul, türkiye</p>
   </div>
-
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
