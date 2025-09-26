@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.vue";
 
 import {usePageStore} from "@/stores/page.ts";
 import type {PageName} from "@/types";
-import type {Component} from "vue";
+import {type Component, onBeforeMount} from "vue";
 
 import Home from "@/pages/Home.vue";
 import Education from "@/pages/Education.vue";
@@ -24,6 +24,15 @@ const pages: PageMap = {
   code: Code,
   social: Social
 }
+
+onBeforeMount(() => {
+  const hour = new Date().getHours();
+  if (hour >= 18 || hour <= 6) {
+    document.title = "こんばんは！"
+  } else {
+    document.title = "こんにちは！"
+  }
+})
 </script>
 
 <template>
