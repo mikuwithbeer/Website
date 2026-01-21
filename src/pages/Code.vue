@@ -10,14 +10,19 @@ import Card from "@/components/Card.vue";
       title="CaptchaKit"
     />
     <Card
-      description="Vocabulary learning ecosystem for Turkish students"
-      link="https://github.com/Vocalium"
-      title="Vocalium"
+      description="CLI program created to extend the trial time for CrossOver"
+      link="https://github.com/mikuwithbeer/LoopOver"
+      title="LoopOver"
+    />
+    <Card
+      description="Low Level Input Management VM for Mac"
+      link="https://github.com/mikuwithbeer/LLIM"
+      title="LLIM"
     />
     <Card
       description="You are currently viewing this website"
       link="/"
-      title="miku.beer"
+      title="Website"
     />
   </div>
 </template>
