@@ -9,7 +9,7 @@
     text="dark-100"
     w="full"
   >
-    miku(dot)beer [ミクとビール]
+    miku(dot)beer
   </p>
 </template>
 

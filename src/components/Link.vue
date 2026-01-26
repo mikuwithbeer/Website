@@ -12,7 +12,7 @@ defineProps<{
     :target="keep ? '_blank' : '_self'"
     flex-inline
     gap-1
-    hover="underline text-pink"
+    hover="underline text-green"
     items-center
     transition="all ease-in-out duration-200"
   >

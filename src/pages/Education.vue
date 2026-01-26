@@ -5,7 +5,7 @@ import Link from "@/components/Link.vue";
 <template>
   <div>
     <Link content="bogazici university" keep link="https://bogazici.edu.tr/" />
-    <p>department of business adm.</p>
+    <p>department of mgmt.</p>
     <p>istanbul, türkiye</p>
   </div>
 </template>

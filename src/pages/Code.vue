@@ -10,12 +10,12 @@ import Card from "@/components/Card.vue";
       title="CaptchaKit"
     />
     <Card
-      description="CLI program created to extend the trial time for CrossOver"
+      description="Simple CLI utility to bypass CrossOver trial expiration"
       link="https://github.com/mikuwithbeer/LoopOver"
       title="LoopOver"
     />
     <Card
-      description="Low Level Input Management VM for Mac"
+      description="Low Level Input Management VM for macOS"
       link="https://github.com/mikuwithbeer/LLIM"
       title="LLIM"
     />
