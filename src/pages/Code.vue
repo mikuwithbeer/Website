@@ -19,11 +19,6 @@ import Card from "@/components/Card.vue";
       link="https://github.com/mikuwithbeer/LLIM"
       title="LLIM"
     />
-    <Card
-      description="You are currently viewing this website"
-      link="/"
-      title="Website"
-    />
   </div>
 </template>
 

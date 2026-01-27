@@ -4,9 +4,10 @@ import Link from "@/components/Link.vue";
 
 <template>
   <div>
-    <Link content="bogazici university" keep link="https://bogazici.edu.tr/" />
-    <p>department of mgmt.</p>
+    <Link content="bogazici university" keep link="https://bogazici.edu.tr/en" />
+    <p>department of management</p>
     <p>istanbul, türkiye</p>
+    <p>2025 -> 2030</p>
   </div>
 </template>
 
