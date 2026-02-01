@@ -20,15 +20,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Package Manager
         uses: pnpm/action-setup@v4
 
       - name: Set up Environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 25
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
@@ -39,7 +39,7 @@ jobs:
         run: pnpm run build
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
