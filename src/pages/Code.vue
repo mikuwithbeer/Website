@@ -1,29 +1,33 @@
 <script lang="ts" setup>
 import Card from "@/components/Card.vue";
+
+const cards = [
+  {
+    title: "CaptchaKit",
+    description: "Server-side verification of various CAPTCHA tokens",
+    link: "https://github.com/mikuwithbeer/CaptchaKit",
+  },
+  {
+    title: "LoopOver",
+    description: "Simple CLI utility to bypass CrossOver trial expiration",
+    link: "https://github.com/mikuwithbeer/LoopOver",
+  },
+  {
+    title: "LMake",
+    description: "Portable software license generator written in Zig",
+    link: "https://github.com/mikuwithbeer/LMake",
+  },
+  {
+    title: "LetDX",
+    description: "Tiny yet efficient financial ledger database",
+    link: "https://github.com/mikuwithbeer/LetDX",
+  },
+].sort((a, b) => a.title.localeCompare(b.title));
 </script>
 
 <template>
   <div flex="~ col" gap-10>
-    <Card
-      description="Server-side verification of various CAPTCHA tokens"
-      link="https://github.com/mikuwithbeer/CaptchaKit"
-      title="CaptchaKit"
-    />
-    <Card
-      description="Low Level Input Management VM for macOS"
-      link="https://github.com/mikuwithbeer/LLIM"
-      title="LLIM"
-    />
-    <Card
-      description="Simple CLI utility to bypass CrossOver trial expiration"
-      link="https://github.com/mikuwithbeer/LoopOver"
-      title="LoopOver"
-    />
-    <Card
-      description="Tiny and portable software license generator written in Zig"
-      link="https://github.com/mikuwithbeer/LMake"
-      title="LMake"
-    />
+    <Card v-for="card in cards" :key="card.title" v-bind="card" />
   </div>
 </template>
 
