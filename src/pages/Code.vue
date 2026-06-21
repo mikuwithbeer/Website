@@ -19,7 +19,7 @@ const cards = [
   },
   {
     title: "LetDX",
-    description: "Tiny yet efficient financial ledger database",
+    description: "Tiny yet robust financial ledger database",
     link: "https://github.com/mikuwithbeer/LetDX",
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
