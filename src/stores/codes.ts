@@ -19,7 +19,7 @@ export const useCodesStore = defineStore("codes", {
                 this.codes = data.map((repo: any): Code => {
                     return {
                         title: repo.name,
-                        description: repo.description,
+                        description: repo.description || "No description provided",
                         link: repo.html_url,
                     };
                 });

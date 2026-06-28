@@ -8,7 +8,7 @@ export type Page = {
 export type Code = {
   title: string;
   link: string;
-  description: string | null;
+  description?: string;
 };
 
 export type Codes = Code[];
