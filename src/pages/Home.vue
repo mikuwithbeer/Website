@@ -1,4 +1,13 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { onMounted } from "vue";
+import { useCodesStore } from "@/stores/codes";
+
+const codesStore = useCodesStore();
+
+onMounted(async () => {
+    await codesStore.fetchCodes("mikuwithbeer");
+});
+</script>
 
 <template>
   <div>

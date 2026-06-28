@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-const props = defineProps<{
-  title: string;
-  description?: string;
-  link: string;
-}>();
+import type { Code } from '@/types';
+
+const props = defineProps<Code>();
 
 const openLink = () => window.open(props.link, "_blank");
 </script>
